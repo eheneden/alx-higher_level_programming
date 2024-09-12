@@ -1,0 +1,10 @@
+#!/bin/bash
+# Check if PYFILE is set
+if [ -z "$PYFILE" ]; then
+    echo "PYFILE environment variable is not set"
+    exit 1
+fi
+
+# Execute the Python script stored in PYFILE
+python3 "$PYFILE"
+
